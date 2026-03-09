@@ -1,8 +1,9 @@
 import socket
+import sys
 
-host = input("Enter target host: ")
-start_port = int(input("Enter start port: "))
-end_port = int(input("Enter end port: "))
+host = sys.argv[1]
+start_port = int(sys.argv[2])
+end_port = int(sys.argv[3])
 
 print(f"\nScanning {host} from port {start_port} to {end_port}...\n")
 
