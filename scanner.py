@@ -5,6 +5,10 @@ host = sys.argv[1]
 start_port = int(sys.argv[2])
 end_port = int(sys.argv[3])
 
+if len(sys.argv) != 4:
+    print("Usage: python3 scanner.py <host> <start_port> <end_port>\n")
+    sys.exit()
+
 print(f"\nScanning {host} from port {start_port} to {end_port}...\n")
 
 for port in range(start_port, end_port + 1):
